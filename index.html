@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- this is how we link up the css -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- And this is how we link up the JS! -->
     <script defer src="js/main.js"></script>
-    <!-- A fun title -->
-    <title>Empowering Tic Tac Toe for the Good of Humanity</title>
+    <title>Tic-Tac-Toe</title>
 </head>
 <body>
+    <dialog id="dialogue">
+        <h4>Projet personnel</h4>
+        <div id="underline"></div>
+        <p id="nomCours">
+          <i><b>Design web gr.2 - Automne 2024</b></i>
+        </p>
+        <div id="contenueDialogue">
+          <div id="texteDialogue">
+            <div id="nom">
+              <p><b>Réalisé par</b></p>
+              <p><i>Nikolas Lepage</i></p>
+            </div>
+            <div id="inspiration">
+              <p><b>Inspiration</b></p>
+              <p>
+                <a id="lien" href="https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883">
+                    https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
+                </a>
+              </p>
+            </div>
+          </div>
+          <img src="https://design-web-victo.github.io/assets/images/megaman.png" alt="">
+        </div>
+        <div id="boutons">
+          <button id="fermer">Fermer la fenêtre</button>
+          <button id="fermerToujours">
+            <i>Ne plus afficher cette fenêtre</i>
+          </button>
+        </div>
+      </dialog
+    
     <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
-    <!-- Many websites are just divs on divs on divs. -->
+    <h2>C'est le tour à X!</h2>
+    <div class="scores">
+        <p>🙉 : <span id="score-x">0</span></p>
+        <p>🥵 : <span id="score-o">0</span></p>
+    </div>
     <div class="flex-container flex-column">
         <div class="flex-container flex-wrap" id="board">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
         </div>
-        <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
-        <button id="reset-button">rénitialiser</button>
+        <button id="reset-button">Réinitialiser</button>
     </div>
 </body>
 </html>
